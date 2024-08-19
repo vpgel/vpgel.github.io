@@ -1,0 +1,15 @@
+
+/* Тело сайта */
+body {
+    background-color:#000000;
+    background-size: cover;
+    width: 1160px;
+    margin:0 auto;
+}
+.logo {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
