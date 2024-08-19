@@ -12,7 +12,7 @@ body {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 750px;
 
     transform: translateY(-100%);
     animation: slide-in-vert 0.5s forwards;
