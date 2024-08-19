@@ -3,13 +3,107 @@
 body {
     background-color:#000000;
     background-size: cover;
-    width: 1160px;
+    /*width: 1160px;*/
     margin:0 auto;
 }
-.logo {
+
+#logo {
     display: block;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 50%;
+
+    transform: translateY(-100%);
+    animation: slide-in-vert 0.5s forwards;
+}
+@keyframes slide-in-vert {
+    100% { transform: translateY(0%); }
+}
+
+main {
+
+    color: #cfcfcf;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+.about {
+    display:grid;
+}
+#text1 {
+    transform: translateX(-100%);
+    animation: slide-in-vert 1s ease-in 1s forwards;
+}
+@keyframes slide-in-hor {
+    100% { transform: translateX(0%);}
+}
+
+.about_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#p543451098 {
+    text-align: right;
+    padding-right: 150px;
+    transform: translateX(-200%);
+    animation: slide-in-vert 2s ease-in 1s forwards;
+}
+
+#pForkGenesis {
+    text-align: left;
+    padding-left: 150px;
+    transform: translateX(200%);
+    animation: slide-in-vert 3s ease-in 1s forwards;
+}
+
+.skin {
+    animation: fade-in 10s forwards;
+    #543451098 {
+        animation-delay: 1.5s;
+    }
+    #ForkGenesis {
+        animation-delay: 2.5s;
+    }
+    opacity: 0%;
+}
+
+#text2 {
+    opacity: 0%;
+    animation: fade-in 0.5s ease-in 4s forwards;
+}
+
+#text3 {
+    font-size: 32px;
+    opacity: 0%;
+    animation: fade-in 0.5s normal 5s forwards;
+    text-align: left;
+}
+
+#text4 {
+    font-size: 32px;
+    opacity: 0%;
+    animation: fade-in 0.5s normal 6s forwards;
+    text-align: left;
+}
+
+
+@keyframes fade-in {
+    100% { opacity: 100%;}
+}
+
+footer {
+    background-color: #1f1f20;
+    color: #cfcfcf;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    p {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
 }

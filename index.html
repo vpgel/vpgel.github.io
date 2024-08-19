@@ -4,20 +4,80 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Официальный сайт - Vasya Programmist</title>
+        <title>Вася Программист</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    </head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js" integrity="sha256-NGC9JEuTWN4GhTj091wctgjzftr+8WNDmw0H8J5YPYE=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/InventivetalentDev/MineRender@1.4.6/dist/skin.min.js"></script>
+    ]</head>
     <body>
+        <header>
+            <a href="/">
+                <img src="resources/vpgel_logo.png" alt="Логотип VPGEL" id="logo">
+            </a>
+        </header>
         <main>
-            <header>
-                <a href="/">
-                    <img src="resources/vpgel_logo.png" alt="Логотип VPGEL" class="logo">
-                </a>
-            </header>
+            <p id="text1">Участники проекта:</p>
+            <div class="about">
+                <div class="about_row">
+                    <div id="p543451098">
+                        GLaDOS23 (a.k.a. 543451098) - Паша<br>
+                        Оккупация: геймер
+                    </div>
+                    <div class="skin" id="543451098"></div>
+                    <script>
+                        new SkinRender({
+                            canvas: {
+                                width: 200,
+                                height: 500,
+                            }
+                        }, document.getElementById("543451098")).render("543451098");
+                    </script>
+                </div>
+                <div class="about_row">
+                    <div class="skin" id="ForkGenesis"></div>
+                    <script>
+                        new SkinRender({
+                            canvas: {
+                                width: 200,
+                                height: 500,
+                            },
+                            controls: {
+                                zoom: false,
+                                pan: false,
+                                rotate: true
+                            },
+                            camera: {
+                                x: -20,
+                                y: 20,
+                                z: 30,
+                                target: [0, 20, 0]
+                            }
+                        }, document.getElementById("ForkGenesis")).render("ForkGenesis");
+                    </script>
+                    <div id="pForkGenesis">
+                        ForkGenesis - Лёша<br>
+                        Оккупация: геймер
+                    </div>
+                </div>
+            </div>
+            <p id="text2">Наши проекты:</p>
+            <ul>
+                <li id="text3">
+                    <a href="https://github.com/vpgel/Minecraft-Client-Bot">Minecraft Client Bot</a> - управление игроками Майнкрафта через Python, Lua, JavaScript, Java, Kotlin, C/C++, C#, DyalogAPL, Elixir, Ruby, Go, Elm, Haskell, VisualBasic или интерфейс командной строки!
+                </li>
+                <li id="text4">
+                    <a href="https://github.com/ForkGenesis/Minecraft-World-API">Minecraft World API</a> - управление сервером Майнкрафта того же плана)
+                </li>
+            </ul>
         </main>
+        <footer>
+            <p>Копирайт Лёши и Паши (c) 2024</p>
+        </footer>
     </body>
+    <script src="js/script.js"></script>
 </html>
